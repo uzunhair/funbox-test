@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 
-
+import Header from '../header';
+import Aside from '../aside';
 import { YMaps, Map } from 'react-yandex-maps';
 
 import './app.css';
 import './system.css';
+
 
 export default class App extends Component {
 
@@ -13,16 +15,12 @@ export default class App extends Component {
     return (
       <div className="app">
 
-        <div>
-          Header
-        </div>
+        <Header />
 
 
         <div className="layout__container">
 
-          <div>
-            Aside
-          </div>
+          <Aside />
 
 
           <div className="layout__body">
